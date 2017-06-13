@@ -1,0 +1,178 @@
+body {
+	font-family: Impact, Arial Black, sans-serif;
+	margin: 0;
+	background-color: rgba(138, 132, 132, .75);
+}
+
+a {
+	text-decoration: none;
+}
+
+.TitleContain{
+	background-color: white;
+	text-align: center;
+}
+
+.TitleHead {
+	max-width: 100%;
+	text-align: center;
+}
+
+.navbar {
+	background-color: black;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.navlist {
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+
+.navitem {
+	display: inline-block;
+}
+
+a {
+	color: white;
+}
+
+.navitem a:hover{
+	background-color: rgba(138, 132, 132, .5);
+}
+
+a:focus {
+	outline: none;
+}
+
+.navlink a {
+	padding: 8px 10px;
+	display: inline-block;
+}
+
+.PicContain {
+	text-align: center;
+	margin: 2.5%
+}
+
+.HomePic{
+	max-width: 100%;
+	
+}
+
+.troopers {
+	margin: 2.5%;
+}
+
+.trooper {
+	display: flex;
+	margin: 2px;
+	margin-right: 20%;
+	margin-left: 20%;
+	padding: 20px;
+	border: 1px solid #dadada;
+	background-color: white;
+}
+
+.trooperInfo {
+	flex: 1 1 80%;
+	margin-left: 10px;
+}
+
+.trooperInfo p {
+	margin: 0;
+}
+
+.trooperInfo .trooperNumber {
+	text-align: right;
+}
+
+.enlistDialog {
+	border: 1px solid #dadada;
+	width: auto;
+	max-width: 600px;
+	min-width: 350px;
+	min-height: 300px;
+	margin: 40px auto;
+	background-color: #fff;
+}
+
+.enlistHeader {
+	position: relative;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+.enlistHeader h1 {
+	margin: 10px;
+	font-size: 30px;
+}
+
+.enlistBody {
+	padding: 10px;
+}
+
+.inputs {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+.inputs label {
+	font-weight: 600;
+	flex: 1 75px;
+	margin-left: 25px;
+}
+
+.inputs input,
+.inputs textarea {
+	flex: 6 200px;
+	padding: 8px;
+	font-size: 20px;
+	border: 1px solid #aaa;
+}
+
+.SignUp {
+	display: flex;
+	justify-content: center;
+	padding: 10px 10px 20px 10px;
+}
+
+.SignUp button {
+	font-size: 20px;
+	background-color: #fff;
+	color: #333;
+	border: 1px solid #333;
+	border-radius: 5px;	
+	padding: 10px;
+	margin-right: 20px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.SignUp #UpButton {
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family: Impact, Arial Black, sans-serif;
+}
+
+.SignUp #UpButton:hover {
+	background-color: rgb(138, 132, 132);
+}
+
+#UpButton:focus {
+	outline: none;
+}
+
+#NewTrooper {
+	text-align: center;
+	padding-bottom: 2px;
+}
+
+.hidden {
+	display: none;
+}
+
+
