@@ -10,8 +10,8 @@ var bodyParser = require('body-parser');
 
 var trooperData = require('./TrooperData');
 var app = express();
-var port = process.env.PORT || 3002;
-
+var port = process.env.PORT || 3001;
+/*
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
@@ -27,7 +27,7 @@ app.get('/Stormtroopers', function (req, res, next) {
 
 });
 
-/*
+
 app.post('/Enlist', function (req, res, next) {
 	var storm = trooperData;
 
@@ -60,17 +60,22 @@ app.post('/Enlist', function (req, res, next) {
 });
 */
 
-app.use('/static', express.static(path.join(__dirname, 'public')));
-
 app.get('/Home', function (req, res) {
-		console.log("== Server listening on port", port);
+	console.log("== Server listening on port", port);
 	res.sendFile(path.join(__dirname, 'public', 'Home.html'));
 });
 
 app.get('/Enlist', function (req, res) {
-		console.log("== Server listening on port", port);
+	console.log("== Server listening on port", port);
 	res.sendFile(path.join(__dirname, 'public', 'Enlist.html'));
 });
+
+app.get('/Stormtroopers', function (req, res) {
+	console.log("== Server listening on port", port);
+	res.sendFile(path.join(__dirname, 'public', 'Stormtroopers.html'));
+});
+
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
 app.get('*', function (req, res) {
 		console.log("== Server listening on port", port);
